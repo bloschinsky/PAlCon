@@ -31,6 +31,12 @@ body{
   border-radius: 3px;
 }
 
+.text_field:focus {
+  outline: 0;
+  box-shadow: 1px 1px 0px black,
+              0px 6px 7px -5px black;
+}
+
 .output{
   padding: 0 5%;
   font-size: 25px;
