@@ -74,7 +74,7 @@ var mainBgColor=0;
 var backgroundFlow = function(){
     document.body.style.backgroundColor = "hsl("+ mainBgColor +", 100%, 90%)";
     mainBgColor +=3;
-    if (i>360) i=0;
+    if (mainBgColor>360) mainBgColor=0;
 }
 
 var timerId = setInterval(backgroundFlow, 200);
