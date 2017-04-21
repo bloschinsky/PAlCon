@@ -105,7 +105,7 @@ function printText(str){
 var mainBgColor=0;
 
 var backgroundFlow = function(){
-    document.body.style.backgroundColor = "hsl("+ mainBgColor +", 100%, 90%)";
+    document.body.style.backgroundColor = "hsl("+ mainBgColor +", 100%, 88%)";
     mainBgColor +=3;
     if (mainBgColor>360) mainBgColor=0;
 }
