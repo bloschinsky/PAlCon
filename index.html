@@ -4,16 +4,31 @@
 <head>
   <meta charset="utf-8">
   <title>Phonetic alphabet converter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="PhoneticParser">
+ <div class="container">
+  <div class="PhoneticParser center-align valign-wrapper">
+   <div class="row">
+   <div class="col s10 offset-s1">
+
     <h1 class="header">Converter to the ICAO phonetic alphabet</h1>
-    <input class="text_field" type="text" value="">
-    <p class="output"></p>
+
+    <input class="text_field center-align hoverable" type="text" value="">
+
   </div>
-  <script src="script.js"></script>
-</body>
+  </div>
+
+    <p class="output indigo-text darken-4-text"></p>
+  
+ </div>
+</div>
+ 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+ <script src="script.js"></script>
+
+ </body>
 
 </html>
