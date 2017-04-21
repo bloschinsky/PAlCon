@@ -1,44 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Electrolize|Marmelad|Geo|Press+Start+2P');
-
-body{
-  background-color: lightyellow;
-  font-family: 'Electrolize', sans-serif;
-
-}
-
-.PhoneticParser{
+.PhoneticParser {
   display: block;
-  text-align: center;
-  height: 100%;
-  padding: 12% 0 0 0;
+  padding: 10% 0 0 0;
 }
 
-.header{
-
-  font-size: 30px;
+.header {
+  font-size: 35px;
+  font-weight: 100;
 }
 
-.text_field{
-  display: inline-block;
-  font-family: 'Marmelad', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  border: 1px solid black;
-  box-shadow: 1px 1px 0px black;
-  height: 25px;
-  min-width: 200px;
-  width: 50%; 
+.text_field {
+  display: block;
   border-radius: 3px;
+  background: rgba(255, 255, 255, 0.4) !important;
 }
 
 .text_field:focus {
   outline: 0;
-  box-shadow: 1px 1px 0px black,
-              0px 6px 7px -5px black;
 }
 
-.output{
-  padding: 0 5%;
+.output {
   font-size: 25px;
-  color: darkblue;
+  font-weight: 500;
 }
