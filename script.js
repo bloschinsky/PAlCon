@@ -82,18 +82,12 @@ inputText.addEventListener("keyup", function(){parsing()});
 
 
 function parsing(){
-  var str = inputText.value;
-  var tempInputArray = str.toUpperCase().split("");
-  var tempOutputArray = [];
+  var lettersStr = inputText.value;
+  var lettersArray = lettersStr.toUpperCase().split("");
+
+  var worldsArray = lettersArray.map(function(letter){return ICAO[letter]});
   
-  for (var i=0; i < tempInputArray.length; i++)
-  {
-    if (ICAO[ tempInputArray[i] ]){
-    tempOutputArray.push( ICAO[ tempInputArray[i] ] );
-    }
-  }
-  
-  printText(tempOutputArray.join(" - "));
+  printText(worldsArray.join(" - "));
 }
 
 function printText(str){
