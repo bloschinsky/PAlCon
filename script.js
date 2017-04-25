@@ -84,8 +84,16 @@ inputText.addEventListener("keyup", function(){parsing()});
 function parsing(){
   var lettersStr = inputText.value;
   var lettersArray = lettersStr.toUpperCase().split("");
-
-  var worldsArray = lettersArray.map(function(letter){return ICAO[letter]});
+  var worldsArray = [];
+  
+  //var worldsArray = lettersArray.map(function(letter){if (ICAO[letter]) return ICAO[letter]});
+  
+  
+  for (var i=0; i < lettersArray.length; i++){
+    if (ICAO[ lettersArray[i] ]){
+    worldsArray.push( ICAO[ lettersArray[i] ] );
+    }
+  }
   
   printText(worldsArray.join(" - "));
 }
