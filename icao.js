@@ -1,4 +1,4 @@
-window.ICAO = {
+export const ICAO = {
     A: "Álfa",
     B: "Brávo",
     C: "Chárlie",
