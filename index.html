@@ -3,34 +3,30 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <title>Phonetic alphabet converter</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
- <div class="container">
-  <div class="PhoneticParser center-align valign-wrapper">
-   
-   <h1 class="header flow-text">Converter to the ICAO phonetic alphabet</h1>
-    
-   <div class="row">
-   <div class="col s10 offset-s1">
+  <div class="container">
+    <form>
+      <div class="PhoneticParser center-align valign-wrapper">
+        <h1 class="header flow-text">Converter to the ICAO phonetic alphabet</h1>
+        <div class="row">
+          <div class="col s10 offset-s1">
+            <input class="text_field center-align hoverable" type="text" value="">
+          </div>
+        </div>
 
-    <input class="text_field center-align hoverable" type="text" value="">
+        <p class="output indigo-text darken-4-text"></p>
+        <input id="play" type="submit" value="Read it for me, please">
 
+      </div>
+    </form>
   </div>
-  </div>
-
-    <p class="output indigo-text darken-4-text"></p>
-  
- </div>
-</div>
- 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
- <script src="script.js"></script>
-
- </body>
+  <script type="module" src="index.js"></script>
+</body>
 
 </html>
